@@ -50,4 +50,19 @@ const data3 = ["1", 2, 3];
 let pi = 3.14;
 let seatAllotment;
 seatAllotment = "window";
+// seatAllotment ="crew" => this does not give chance
+//======================......tuples.......================================================================
+// use instances like API calls
+let tUser;
+tUser = ["Ama", 2, true]; //order is really matters
+let rgb = [255, 234, 123];
+//================...enums...=============================================================================
+//enums are used to choose the elements
+var SeatChoice;
+(function (SeatChoice) {
+    SeatChoice[SeatChoice["AISLE"] = 1000] = "AISLE";
+    SeatChoice[SeatChoice["MIDDLE"] = 1001] = "MIDDLE";
+    SeatChoice[SeatChoice["WINDOW"] = 1002] = "WINDOW";
+})(SeatChoice || (SeatChoice = {}));
+const hsheat = SeatChoice.AISLE;
 //# sourceMappingURL=Type_alises.js.map

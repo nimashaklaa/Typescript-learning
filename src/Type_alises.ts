@@ -109,5 +109,17 @@ seatAllotment ="window"
 //======================......tuples.......================================================================
 // use instances like API calls
 
+let tUser:[String,number,boolean]
+tUser =["Ama",2,true]  //order is really matters
 
+let rgb:[number,number,number]=[255,234,123]
+
+//================...enums...=============================================================================
+//enums are used to choose the elements
+
+enum SeatChoice{
+    AISLE = 1000, MIDDLE,WINDOW
+
+}
+const hsheat =SeatChoice.AISLE;
 export{}
