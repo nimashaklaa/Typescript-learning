@@ -10,5 +10,8 @@
   "license": "ISC",
   "devDependencies": {
     "typescript": "^5.3.2"
+  },
+  "dependencies": {
+    "lite-server": "^2.6.1"
   }
 }
