@@ -64,7 +64,50 @@ let cardDetails: CardDetails = {
 };
 
 console.log(cardDetails);
+//===========================================================union==================================
 
+type Student={
+    name: String;
+    id :number
+}
+type Admin={
+    username: String;
+    id:number
+}
+//we can give access to hithesh as a Student or as an Admin
+let hithesh :Student | Admin ={
+    name :"hithesh",
+    id:123456
+}
+hithesh ={ username:"hithesha",id :23567}
+console.log(hithesh)
+//=====================================================================================================
+
+function getDBid(id :String|number){
+    if (typeof id ==="string"){
+        id = id.toLowerCase()
+        console.log(`DB id is ${id}`)
+    }
+    
+    //console.log(`DB id is ${id}`)
+}
+getDBid("SGye")
+//====================================================================================================
+
+const data :Number[]=[1,2,3]
+const data2: String[]=["1","2","3"]
+const data3:(Number | String)[]=["1",2,3]
+
+//========================================================================================================
+
+//fixed values
+let pi:3.14 =3.14
+let seatAllotment: "aslie"|"window"|"middle"
+seatAllotment ="window"
+// seatAllotment ="crew" => this does not give chance
+
+//======================......tuples.......================================================================
+// use instances like API calls
 
 
 export{}

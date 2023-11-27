@@ -25,4 +25,29 @@ let cardDate = {
 };
 let cardDetails = Object.assign(Object.assign(Object.assign({}, cardNumber), cardDate), { cvv: "123" });
 console.log(cardDetails);
+//we can give access to hithesh as a Student or as an Admin
+let hithesh = {
+    name: "hithesh",
+    id: 123456
+};
+hithesh = { username: "hithesha", id: 23567 };
+console.log(hithesh);
+//=====================================================================================================
+function getDBid(id) {
+    if (typeof id === "string") {
+        id = id.toLowerCase();
+        console.log(`DB id is ${id}`);
+    }
+    //console.log(`DB id is ${id}`)
+}
+getDBid("SGye");
+//====================================================================================================
+const data = [1, 2, 3];
+const data2 = ["1", "2", "3"];
+const data3 = ["1", 2, 3];
+//========================================================================================================
+//fixed values
+let pi = 3.14;
+let seatAllotment;
+seatAllotment = "window";
 //# sourceMappingURL=Type_alises.js.map
