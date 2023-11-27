@@ -19,9 +19,51 @@ function PointCode(pt:Point){
 }
 PointCode({x:20,y:50})
 
+//example 3 ==================================================================================================
 
+type Users ={
+    readonly _id: String; //no body will be able to touch / manupulate this data 
+    name:String;
+    email: String;
+    isActive:boolean;
+    credictCardDetails?:number;  // ? is used for optinal details
+}
+let MyUser:Users ={
+    _id :"12345",
+    name:"Amandi",
+    email:"amandi@gmail.com",
+    isActive: true
 
+}
+MyUser.email ="nimasha@gmail.com"
+console.log(MyUser)
 
+//====================================================================================================================
+type CardNumber ={
+    CardNumber:String
+}
+
+type CardDate ={
+    CardDate:String
+}
+type CardDetails = CardNumber & CardDate &{
+    cvv:String
+}
+let cardNumber: CardNumber = {
+    CardNumber: "1234 5678 9012 3456"
+};
+
+let cardDate: CardDate = {
+    CardDate: "12/24"
+};
+
+let cardDetails: CardDetails = {
+    ...cardNumber,
+    ...cardDate,
+    cvv: "123"
+};
+
+console.log(cardDetails);
 
 
 

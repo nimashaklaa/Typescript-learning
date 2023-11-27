@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\dist\\type_alises.js",
+            "program": "${workspaceFolder}\\dist\\dataTypes.js",
             "outFiles": [
                 "${workspaceFolder}/**/*.js"
             ]
