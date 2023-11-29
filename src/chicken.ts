@@ -3,3 +3,4 @@ export class Chicken{
         console.log("cluck hi")
     }
 }
+//export{}
