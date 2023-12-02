@@ -1,6 +1,6 @@
 // type no.1
 interface UserNo{
-    readonly dbId :number;
+    readonly dbId :number,
     email :string;
     userId :number;
     googleId ?:number;

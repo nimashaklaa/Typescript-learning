@@ -8,6 +8,7 @@ interface story{
 }
 
 class Instegram implements TakePhotos,story{
+
     constructor(
         public cameraMode:String,
         public filter:String,

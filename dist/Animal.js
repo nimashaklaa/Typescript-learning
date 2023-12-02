@@ -19,4 +19,20 @@ class Dog extends Animal {
 let dog = new Dog("Rex", "Gold Retriver");
 dog.bark();
 dog.move(10);
+function getdata(s) {
+    if (s) {
+        if (typeof s === "object") {
+            for (const sb of s) {
+                console.log(sb);
+            }
+        }
+        else if (typeof s === 'string') {
+            console.log(s);
+        }
+    }
+    else {
+        console.log('You have enterd a null value');
+    }
+}
+getdata(["hi", "his"]);
 //# sourceMappingURL=Animal.js.map
