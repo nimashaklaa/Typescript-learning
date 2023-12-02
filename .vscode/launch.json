@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\dist\\discriminated_union.js",
+            "program": "${workspaceFolder}\\dist\\Animal.js",
             "outFiles": [
                 "${workspaceFolder}/**/*.js"
             ]
