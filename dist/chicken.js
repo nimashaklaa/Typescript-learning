@@ -7,4 +7,5 @@ class Chicken {
     }
 }
 exports.Chicken = Chicken;
+//export{}
 //# sourceMappingURL=chicken.js.map
